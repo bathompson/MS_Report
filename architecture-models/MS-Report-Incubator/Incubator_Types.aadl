@@ -1,0 +1,78 @@
+package Incubator_Types
+public
+	with Data_Model, Base_Types;
+	
+data DegreesC
+	
+end DegreesC;
+data implementation DegreesC.i
+	subcomponents
+		value: data Base_Types::Float_32;
+end DegreesC.i;
+
+data Seconds
+	
+end Seconds;
+data implementation Seconds.i
+	subcomponents
+		value: data Base_Types::Integer_16;
+end Seconds.i;
+	
+data Controller_State
+	properties
+		Data_Model::Data_Representation => Enum;
+		Data_Model::Enumerators => ("Cooling", "Heating", "Waiting");
+end Controller_State;
+	
+data Controller_Status
+	
+end Controller_Status;
+data implementation Controller_Status.i
+	subcomponents
+		Cur_Time: data Seconds.i;
+		Heater_On: data Base_Types::Boolean;
+		Fan_On: data Base_Types::Boolean;
+		Current_State: data Controller_State;
+		Next_Time: data Seconds.i;
+		Target_Temp: data DegreesC.i;
+		Lower_Bound: data DegreesC.i;
+		Heating_Time: data Seconds.i;
+		Heating_Gap: data Seconds.i;
+end Controller_Status.i;
+
+data Closed_Loop_Param_Updates
+	
+end Closed_Loop_Param_Updates;
+data implementation Closed_Loop_Param_Updates.i
+	subcomponents
+		target_temperature: data DegreesC.i;
+end Closed_Loop_Param_Updates.i;
+
+data Temp_Sensor_Reading
+	
+end Temp_Sensor_Reading;
+data implementation Temp_Sensor_Reading.i
+	subcomponents
+		Reading: data DegreesC.i;
+		Timestamp: data Seconds.i;
+end Temp_Sensor_Reading.i;
+
+data Device_State
+	
+end Device_State;
+
+data implementation Device_State.i
+	subcomponents
+		t1: data Temp_Sensor_Reading.i;
+		t2: data Temp_Sensor_Reading.i;
+		t3: data Temp_Sensor_Reading.i;
+		average_internal_temp: data DegreesC.i;
+		heater_on: data Base_Types::Boolean;
+		fan_on: data Base_Types::Boolean;
+		execution_interval: data Seconds.i;
+		elapsed_time: data Seconds.i;
+end Device_State.i;
+	
+
+	
+end Incubator_Types;

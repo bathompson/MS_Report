@@ -1,0 +1,72 @@
+package Incubator_Physcial
+public
+	with Incubator_Types, Base_Types;
+	
+	system Physical_Twin
+		features
+			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
+			device_state: out data port Incubator_Types::Device_State.i;
+			controller_status: out data port Incubator_Types::Controller_Status.i;
+	end Physical_Twin;
+	system implementation Physical_Twin.i
+		subcomponents
+			ptp: process Physical_Twin_Process.i;
+		connections
+			in_param_updates: port param_updates -> ptp.param_updates;
+			out_device_state: port ptp.device_state -> device_state;
+			out_controller_status: port ptp.controller_status -> controller_status;
+	end Physical_Twin.i;
+	
+	process Physical_Twin_Process
+		features
+			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
+			device_state: out data port Incubator_Types::Device_State.i;
+			controller_status: out data port Incubator_Types::Controller_Status.i;
+	end Physical_Twin_Process;
+	
+	process implementation Physical_Twin_Process.i
+		subcomponents
+			device_manager: thread Device_Manager.i;
+			controller: thread Physical_Controller.i;
+		connections
+			in_param_updates: port param_updates -> controller.param_updates;
+			out_device_state: port device_manager.device_state -> device_state;
+			out_controller_status: port controller.controller_status -> controller_status;
+			C_req_heater_on_DM: port controller.request_heater_on -> device_manager.request_heater_on;
+			C_req_fan_on_DM: port controller.request_fan_on -> device_manager.request_fan_on;
+			DM_device_state_C: port device_manager.device_state -> controller.device_state;
+			
+	end Physical_Twin_Process.i;
+	
+	thread Device_Manager
+		features
+			t1: in data port Incubator_Types::Temp_Sensor_Reading.i;
+			t2: in data port Incubator_Types::Temp_Sensor_Reading.i;
+			t3: in data port Incubator_Types::Temp_Sensor_Reading.i;
+			is_heater_on: in data port Base_Types::Boolean;
+			request_heater_on: in data port Base_Types::Boolean; 
+			is_fan_on: in data port Base_Types::Boolean;
+			request_fan_on: in data port Base_Types::Boolean;
+			device_state: out data port Incubator_Types::Device_State.i;
+		properties
+			Thread_Properties::Dispatch_Protocol => Periodic;
+   			Timing_Properties::Period => 3sec;
+	end Device_Manager;
+	thread implementation Device_Manager.i
+	end Device_Manager.i;
+
+	thread Physical_Controller
+		features
+			device_state: in data port Incubator_Types::Device_State.i;
+			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
+			request_heater_on: out data port Base_Types::Boolean;
+			request_fan_on: out data port Base_Types::Boolean;
+			controller_status: out data port Incubator_Types::Controller_Status.i;
+		properties
+			Thread_Properties::Dispatch_Protocol => Periodic;
+   			Timing_Properties::Period => 3sec;
+	end Physical_Controller;
+	thread implementation Physical_Controller.i
+	end Physical_Controller.i;
+	
+end Incubator_Physcial;
