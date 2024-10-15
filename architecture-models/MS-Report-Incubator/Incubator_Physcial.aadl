@@ -40,12 +40,7 @@ public
 	
 	thread Device_Manager
 		features
-			t1: in data port Incubator_Types::Temp_Sensor_Reading.i;
-			t2: in data port Incubator_Types::Temp_Sensor_Reading.i;
-			t3: in data port Incubator_Types::Temp_Sensor_Reading.i;
-			is_heater_on: in data port Base_Types::Boolean;
 			request_heater_on: in data port Base_Types::Boolean; 
-			is_fan_on: in data port Base_Types::Boolean;
 			request_fan_on: in data port Base_Types::Boolean;
 			device_state: out data port Incubator_Types::Device_State.i;
 		properties

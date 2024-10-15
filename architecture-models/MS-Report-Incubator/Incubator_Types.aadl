@@ -15,7 +15,7 @@ data Seconds
 end Seconds;
 data implementation Seconds.i
 	subcomponents
-		value: data Base_Types::Integer_16;
+		value: data Base_Types::Integer_64;
 end Seconds.i;
 	
 data Controller_State
@@ -48,24 +48,18 @@ data implementation Closed_Loop_Param_Updates.i
 		target_temperature: data DegreesC.i;
 end Closed_Loop_Param_Updates.i;
 
-data Temp_Sensor_Reading
-	
-end Temp_Sensor_Reading;
-data implementation Temp_Sensor_Reading.i
-	subcomponents
-		Reading: data DegreesC.i;
-		Timestamp: data Seconds.i;
-end Temp_Sensor_Reading.i;
-
 data Device_State
 	
 end Device_State;
 
 data implementation Device_State.i
 	subcomponents
-		t1: data Temp_Sensor_Reading.i;
-		t2: data Temp_Sensor_Reading.i;
-		t3: data Temp_Sensor_Reading.i;
+		t1: data DegreesC.i;
+		t1_time: data Seconds.i;
+		t2: data DegreesC.i;
+		t2_time: data Seconds.i;
+		t3: data DegreesC.i;
+		t3_time: data Seconds.i;
 		average_internal_temp: data DegreesC.i;
 		heater_on: data Base_Types::Boolean;
 		fan_on: data Base_Types::Boolean;
