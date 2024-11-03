@@ -66,6 +66,17 @@ data implementation Device_State.i
 		execution_interval: data Seconds.i;
 		elapsed_time: data Seconds.i;
 end Device_State.i;
+
+data Kalman_Prediction
+	
+end Kalman_Prediction;
+data implementation Kalman_Prediction.i
+	subcomponents
+		T_heater: data DegreesC.i;
+		prediction_error: data DegreesC.i;
+		average_temperature: data DegreesC.i;
+		prediction_time: data Seconds.i;
+end Kalman_Prediction.i;
 	
 
 	

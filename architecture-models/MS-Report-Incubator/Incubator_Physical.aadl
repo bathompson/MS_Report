@@ -1,12 +1,12 @@
-package Incubator_Physcial
+package Incubator_Physical
 public
 	with Incubator_Types, Base_Types;
 	
 	system Physical_Twin
 		features
 			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
-			device_state: out data port Incubator_Types::Device_State.i;
-			controller_status: out data port Incubator_Types::Controller_Status.i;
+			device_state: out event data port Incubator_Types::Device_State.i;
+			controller_status: out event data port Incubator_Types::Controller_Status.i;
 	end Physical_Twin;
 	system implementation Physical_Twin.i
 		subcomponents
@@ -20,8 +20,8 @@ public
 	process Physical_Twin_Process
 		features
 			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
-			device_state: out data port Incubator_Types::Device_State.i;
-			controller_status: out data port Incubator_Types::Controller_Status.i;
+			device_state: out event data port Incubator_Types::Device_State.i;
+			controller_status: out event data port Incubator_Types::Controller_Status.i;
 	end Physical_Twin_Process;
 	
 	process implementation Physical_Twin_Process.i
@@ -42,7 +42,7 @@ public
 		features
 			request_heater_on: in data port Base_Types::Boolean; 
 			request_fan_on: in data port Base_Types::Boolean;
-			device_state: out data port Incubator_Types::Device_State.i;
+			device_state: out event data port Incubator_Types::Device_State.i;
 		properties
 			Thread_Properties::Dispatch_Protocol => Periodic;
    			Timing_Properties::Period => 3sec;
@@ -52,14 +52,14 @@ public
 
 	thread Physical_Controller
 		features
-			device_state: in data port Incubator_Types::Device_State.i;
+			device_state: in event data port Incubator_Types::Device_State.i;
 			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
 			request_heater_on: out data port Base_Types::Boolean;
 			request_fan_on: out data port Base_Types::Boolean;
-			controller_status: out data port Incubator_Types::Controller_Status.i;
+			controller_status: out event data port Incubator_Types::Controller_Status.i;
 		properties
-			Thread_Properties::Dispatch_Protocol => Periodic;
-   			Timing_Properties::Period => 3sec;
+			Thread_Properties::Dispatch_Protocol => Sporadic;
+   			Timing_Properties::Period => 1sec;
 	end Physical_Controller;
 	thread implementation Physical_Controller.i
 	end Physical_Controller.i;
