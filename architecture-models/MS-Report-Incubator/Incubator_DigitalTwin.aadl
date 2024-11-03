@@ -34,6 +34,8 @@ public
 			in_device_state_idbr: port device_state -> idbr.device_state;
 			in_device_state_pkf: port device_state -> pkf.device_state;
 			pkf_kalman_prediction_loam: port pkf.kalman_prediction -> loam.kalman_prediction;
+			pkf_kalman_prediction_idbr: port pkf.kalman_prediction -> idbr.kalman_prediction;
+			loam_param_updates_idbr: port loam.param_updates -> idbr.param_updates;
 			loam_out_param_updates: port loam.param_updates -> param_updates;
 	end DigitalTwin_Process.i;
 	
@@ -66,6 +68,8 @@ public
 		features
 			controller_status: in event data port Incubator_Types::Controller_Status.i;
 			device_state: in event data port Incubator_Types::Device_State.i;
+			kalman_prediction: in event data port Incubator_Types::Kalman_Prediction.i;
+			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
 		properties
 			Thread_Properties::Dispatch_Protocol => Sporadic;
    			Timing_Properties::Period => 1sec;
