@@ -1,0 +1,52 @@
+[0.009s] Invoking command in '/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg': AMENT_PREFIX_PATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/thompson/MS_Report/hamr_incubator_ws/src/incubator_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.121s] -- The CXX compiler identification is GNU 11.4.0
+[0.128s] -- Detecting C compiler ABI info
+[0.194s] -- Detecting C compiler ABI info - done
+[0.202s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.202s] -- Detecting C compile features
+[0.202s] -- Detecting C compile features - done
+[0.205s] -- Detecting CXX compiler ABI info
+[0.282s] -- Detecting CXX compiler ABI info - done
+[0.289s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.289s] -- Detecting CXX compile features
+[0.290s] -- Detecting CXX compile features - done
+[0.291s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.418s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.491s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.533s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.537s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.543s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.552s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.627s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.631s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.732s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.754s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.786s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.806s] -- Looking for pthread.h
+[0.877s] -- Looking for pthread.h - found
+[0.877s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.947s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.948s] -- Found Threads: TRUE  
+[1.025s] -- Found incubator_cpp_pkg_interfaces: 0.0.0 (/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/cmake)
+[1.039s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[1.039s]   By not providing "Findpigpio.cmake" in CMAKE_MODULE_PATH this project has
+[1.039s]   asked CMake to find a package configuration file provided by "pigpio", but
+[1.039s]   CMake did not find one.
+[1.039s] 
+[1.039s]   Could not find a package configuration file provided by "pigpio" with any
+[1.039s]   of the following names:
+[1.040s] 
+[1.040s]     pigpioConfig.cmake
+[1.040s]     pigpio-config.cmake
+[1.040s] 
+[1.040s]   Add the installation prefix of "pigpio" to CMAKE_PREFIX_PATH or set
+[1.040s]   "pigpio_DIR" to a directory containing one of the above files.  If "pigpio"
+[1.040s]   provides a separate development package or SDK, be sure it has been
+[1.040s]   installed.
+[1.040s] 
+[1.040s] [0m
+[1.040s] -- Configuring incomplete, errors occurred!
+[1.040s] See also "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg/CMakeFiles/CMakeOutput.log".
+[1.047s] Invoked command in '/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg' returned '1': AMENT_PREFIX_PATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/thompson/MS_Report/hamr_incubator_ws/src/incubator_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg

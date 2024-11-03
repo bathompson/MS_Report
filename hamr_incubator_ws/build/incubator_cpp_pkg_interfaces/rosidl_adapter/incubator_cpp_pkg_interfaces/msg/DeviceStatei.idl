@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from incubator_cpp_pkg_interfaces/msg/DeviceStatei.msg
+// generated code does not contain a copyright notice
+
+#include "incubator_cpp_pkg_interfaces/msg/Boolean.idl"
+#include "incubator_cpp_pkg_interfaces/msg/DegreesCi.idl"
+#include "incubator_cpp_pkg_interfaces/msg/Secondsi.idl"
+
+module incubator_cpp_pkg_interfaces {
+  module msg {
+    struct DeviceStatei {
+      incubator_cpp_pkg_interfaces::msg::DegreesCi t1;
+
+      incubator_cpp_pkg_interfaces::msg::Secondsi t1_time;
+
+      incubator_cpp_pkg_interfaces::msg::DegreesCi t2;
+
+      incubator_cpp_pkg_interfaces::msg::Secondsi t2_time;
+
+      incubator_cpp_pkg_interfaces::msg::DegreesCi t3;
+
+      incubator_cpp_pkg_interfaces::msg::Secondsi t3_time;
+
+      incubator_cpp_pkg_interfaces::msg::DegreesCi average_internal_temp;
+
+      incubator_cpp_pkg_interfaces::msg::Boolean heater_on;
+
+      incubator_cpp_pkg_interfaces::msg::Boolean fan_on;
+
+      incubator_cpp_pkg_interfaces::msg::Secondsi execution_interval;
+
+      incubator_cpp_pkg_interfaces::msg::Secondsi elapsed_time;
+    };
+  };
+};

@@ -1,0 +1,42 @@
+{
+  "package_name": "incubator_cpp_pkg_interfaces",
+  "output_dir": "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_generator_c/incubator_cpp_pkg_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/Float32.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/DegreesCi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/ClosedLoopParamUpdatesi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/Integer64.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/Secondsi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/Boolean.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/DeviceStatei.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/ControllerState.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/ControllerStatusi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces:msg/Empty.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/Float32.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/DegreesCi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/ClosedLoopParamUpdatesi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/Integer64.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/Secondsi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/Boolean.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/DeviceStatei.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/ControllerState.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/ControllerStatusi.idl",
+    "/home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/rosidl_adapter/incubator_cpp_pkg_interfaces/msg/Empty.idl"
+  ]
+}

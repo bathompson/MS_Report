@@ -1,0 +1,18 @@
+package Incubator
+public
+	with Base_Types, Incubator_Physical, Incubator_DigitalTwin;
+
+	system Incubator
+	end Incubator;
+	
+	system implementation Incubator.i
+		subcomponents
+			pt: system Incubator_Physical::Physical_Twin.i;
+			dt: system Incubator_DigitalTwin::Digital_Twin.i;
+		connections
+			controller_status: port pt.controller_status -> dt.controller_status;
+			device_state: port pt.device_state -> dt.device_state;
+			param_updates: port dt.param_updates -> pt.param_updates;
+	end Incubator.i;
+	
+end Incubator;

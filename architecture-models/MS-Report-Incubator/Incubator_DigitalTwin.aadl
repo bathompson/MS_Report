@@ -1,0 +1,77 @@
+package Incubator_DigitalTwin
+public
+	with Base_Types, Incubator_Types, Incubator_Physical;
+	
+	system Digital_Twin
+		features
+			controller_status: in event data port Incubator_Types::Controller_Status.i;
+			device_state: in event data port Incubator_Types::Device_State.i;
+			param_updates: out event data port Incubator_Types::Closed_Loop_Param_Updates.i;
+	end Digital_Twin;
+	system implementation Digital_Twin.i
+		subcomponents
+			dtp: process DigitalTwin_Process.i;
+		connections
+			in_controller_status: port controller_status -> dtp.controller_status;
+			in_device_state: port device_state -> dtp.device_state;
+			out_param_updates: port dtp.param_updates -> param_updates;
+			
+	end Digital_Twin.i;
+	
+	process DigitalTwin_Process
+		features
+			controller_status: in event data port Incubator_Types::Controller_Status.i;
+			device_state: in event data port Incubator_Types::Device_State.i;
+			param_updates: out event data port Incubator_Types::Closed_Loop_Param_Updates.i;
+	end DigitalTwin_Process;
+	process implementation DigitalTwin_Process.i
+		subcomponents
+			idbr: thread InfluxDB_Recorder.i;
+			pkf: thread Plant_Kalman_Filter.i;
+			loam: thread Lid_Open_Adaptation_Manager.i;
+		connections
+			in_controller_status_idbr: port controller_status -> idbr.controller_status;
+			in_device_state_idbr: port device_state -> idbr.device_state;
+			in_device_state_pkf: port device_state -> pkf.device_state;
+			pkf_kalman_prediction_loam: port pkf.kalman_prediction -> loam.kalman_prediction;
+			loam_out_param_updates: port loam.param_updates -> param_updates;
+	end DigitalTwin_Process.i;
+	
+	thread Plant_Kalman_Filter
+		features
+			device_state: in event data port Incubator_Types::Device_State.i;
+			kalman_prediction: out event data port Incubator_Types::Kalman_Prediction.i;
+		properties
+			Thread_Properties::Dispatch_Protocol => Sporadic;
+			Timing_Properties::Period => 1sec;
+	end Plant_Kalman_Filter;
+	thread implementation Plant_Kalman_Filter.i
+		
+	end Plant_Kalman_Filter.i;
+	
+	thread Lid_Open_Adaptation_Manager
+		features
+			kalman_prediction: in event data port Incubator_Types::Kalman_Prediction.i;
+			param_updates: out event data port Incubator_Types::Closed_Loop_Param_Updates.i;
+		properties
+			Thread_Properties::Dispatch_Protocol => Sporadic;
+			Timing_Properties::Period => 1sec;
+	end Lid_Open_Adaptation_Manager;
+	
+	thread implementation Lid_Open_Adaptation_Manager.i
+		
+	end Lid_Open_Adaptation_Manager.i;
+	
+	thread InfluxDB_Recorder
+		features
+			controller_status: in event data port Incubator_Types::Controller_Status.i;
+			device_state: in event data port Incubator_Types::Device_State.i;
+		properties
+			Thread_Properties::Dispatch_Protocol => Sporadic;
+   			Timing_Properties::Period => 1sec;
+	end InfluxDB_Recorder;
+	thread implementation InfluxDB_Recorder.i
+		
+	end InfluxDB_Recorder.i;
+	
+end Incubator_DigitalTwin;

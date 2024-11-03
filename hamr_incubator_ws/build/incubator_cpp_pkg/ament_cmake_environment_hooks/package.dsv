@@ -1,0 +1,4 @@
+source;share/incubator_cpp_pkg/local_setup.bash
+source;share/incubator_cpp_pkg/local_setup.dsv
+source;share/incubator_cpp_pkg/local_setup.sh
+source;share/incubator_cpp_pkg/local_setup.zsh

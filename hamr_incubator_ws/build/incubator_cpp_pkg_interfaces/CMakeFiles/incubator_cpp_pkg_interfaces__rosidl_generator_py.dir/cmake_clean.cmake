@@ -1,0 +1,29 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_boolean_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_boolean_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_closed_loop_param_updatesi_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_closed_loop_param_updatesi_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_controller_state_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_controller_state_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_controller_statusi_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_controller_statusi_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_degrees_ci_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_degrees_ci_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_device_statei_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_device_statei_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_empty_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_empty_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_float32_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_float32_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_integer64_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_integer64_s.c.o.d"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_secondsi_s.c.o"
+  "CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_secondsi_s.c.o.d"
+  "rosidl_generator_py/incubator_cpp_pkg_interfaces/libincubator_cpp_pkg_interfaces__rosidl_generator_py.pdb"
+  "rosidl_generator_py/incubator_cpp_pkg_interfaces/libincubator_cpp_pkg_interfaces__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/incubator_cpp_pkg_interfaces__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
