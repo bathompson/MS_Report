@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="8550b9ce-165f-46c1-ab05-3a5e66a3bd4e" manual="true">
+    <element uuid="117f210d-e1eb-4ecf-a7ed-902df05ea7ec" manual="true">
+      <element uuid="7da8ae89-3e39-4066-af44-23d56e072e0c" manual="true">
+        <element uuid="f190365b-7227-457e-a774-19a65a7f3738" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>controller_status</seg>
+        </bo>
+      </element>
+      <element uuid="f6a2b2b7-4ed2-4adb-abc1-b00ddfab54c7" manual="true">
+        <element uuid="737a523d-82c0-40f3-8a58-273d5d84ddcd" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>device_state</seg>
+        </bo>
+        <bendpoints>
+          <point x="969.1640625" y="256.0"/>
+          <point x="969.1640625" y="156.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="9153f36f-f16a-46ff-8a8c-db5d3d0fb62a" manual="true">
+        <element uuid="dd7f1de5-2d8d-4bd1-9863-758873b7ca9b" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>param_updates</seg>
+        </bo>
+        <bendpoints>
+          <point x="1636.0" y="186.0"/>
+          <point x="1636.0" y="291.0"/>
+          <point x="340.0" y="297.0"/>
+          <point x="339.0" y="235.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="0a094bd7-8b73-4bcb-a96e-6c8d6d5ba1cf" manual="true">
+        <element uuid="b49c72a8-9a3b-4370-b76a-4381132ca221" manual="true">
+          <element uuid="cc0f8458-5567-4ca8-ad03-d5f1ef94a14c" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>in_controller_status</seg>
+          </bo>
+        </element>
+        <element uuid="c904f09c-9d31-4550-886c-e65b976153b8" manual="true">
+          <element uuid="ba3f6bef-ad81-49b2-bb58-ca81efddc67b" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>in_device_state</seg>
+          </bo>
+        </element>
+        <element uuid="5400efc1-bb95-430a-96e3-eb0b77c78989" manual="true">
+          <element uuid="1838a3b5-4645-4f16-814f-87601c2444dc" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>out_param_updates</seg>
+          </bo>
+        </element>
+        <element uuid="ec3ea054-d015-4e2a-bd57-cdc4422d5bc3" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>controller_status</seg>
+          </bo>
+          <position y="98.0"/>
+        </element>
+        <element uuid="93d9baa2-ce79-4484-ad8e-beba1192d375" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>device_state</seg>
+          </bo>
+          <position y="48.0"/>
+        </element>
+        <element uuid="5e664b4a-9079-48a0-8d02-710aa08e8149" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>param_updates</seg>
+          </bo>
+          <position x="425.34375" y="73.0"/>
+        </element>
+        <element uuid="7aabfdbf-0929-49e6-8295-e6835f3bef2c" manual="true">
+          <element uuid="d1e2594d-8f8d-4aaa-b6a4-7980db101c02" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>controller_status</seg>
+            </bo>
+            <position y="60.0"/>
+          </element>
+          <element uuid="1d64632c-bfe5-47e0-a48e-66f32954656d" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>device_state</seg>
+            </bo>
+            <position y="10.0"/>
+          </element>
+          <element uuid="2d3740f3-8eac-491a-9372-f400af9ce790" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>param_updates</seg>
+            </bo>
+            <position x="190.71875381469727" y="35.0"/>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>dtp</seg>
+          </bo>
+          <position x="121.421875" y="38.0"/>
+          <size width="295.37500381469727" height="110.0"/>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>dt</seg>
+        </bo>
+        <position x="720.0" y="42.0"/>
+        <size width="530.0" height="160.0"/>
+      </element>
+      <element uuid="be72be83-ad78-4d2e-9ce1-bc8979502712" manual="true">
+        <element uuid="4b2dfb9c-1f59-468b-a1d8-580e8f4ffc83" manual="true">
+          <element uuid="e2afc513-ca5d-4ac9-bb3c-d73e7b13a4d5" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>in_param_updates</seg>
+          </bo>
+        </element>
+        <element uuid="51af2dc2-d1ea-44f6-a42e-46eb8c9cfa72" manual="true">
+          <element uuid="d2cfb318-ecc7-48d3-a479-ef5a539db95d" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>out_controller_status</seg>
+          </bo>
+        </element>
+        <element uuid="9a5aa7c6-0498-4879-ae83-5d8187423a9a" manual="true">
+          <element uuid="53ca74cf-66f8-4ecd-b576-021a338c978f" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>out_device_state</seg>
+          </bo>
+        </element>
+        <element uuid="29ad0a1d-168e-4678-bacb-c05f1b670928" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>controller_status</seg>
+          </bo>
+          <position x="430.17447662353516" y="48.0"/>
+        </element>
+        <element uuid="f5c0c3f5-80b2-44e3-b877-19cdf11ed01b" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>device_state</seg>
+          </bo>
+          <position x="453.13671875" y="98.0"/>
+        </element>
+        <element uuid="dd9bee67-8d1e-4ebe-bce8-362f4b0d5bbb" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>param_updates</seg>
+          </bo>
+          <position y="73.0"/>
+        </element>
+        <element uuid="1c4714df-ff10-4cb4-a5e5-cc2d8f264bcc" manual="true">
+          <element uuid="3dd0bad4-8846-4e73-9907-b93c6caca21b" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>controller_status</seg>
+            </bo>
+            <position x="185.54948043823242" y="10.0"/>
+          </element>
+          <element uuid="ebbd625c-44fa-4d39-bdf4-e98fefccfc59" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>device_state</seg>
+            </bo>
+            <position x="208.51172256469727" y="60.0"/>
+          </element>
+          <element uuid="ec2213bd-1b34-412f-a9cf-dbdc4694d02e" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>param_updates</seg>
+            </bo>
+            <position y="35.0"/>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>ptp</seg>
+          </bo>
+          <position x="122.91926574707031" y="38.0"/>
+          <size width="295.37500381469727" height="110.0"/>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>pt</seg>
+        </bo>
+        <position x="70.0" y="92.0"/>
+        <size width="540.0" height="160.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>Incubator.i</seg>
+      </bo>
+      <position x="50.0" y="38.0"/>
+      <size width="1330.0" height="270.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>Incubator</seg>
+    </bo>
+    <position x="280.0"/>
+    <size width="1410.0" height="320.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>Incubator</seg>
+    </context>
+  </config>
+</diagram:Diagram>

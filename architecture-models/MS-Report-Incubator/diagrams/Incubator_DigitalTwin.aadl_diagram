@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="db77daa8-196a-42ee-aaa9-a8ff9c20a095" manual="true">
+    <element uuid="4ecedb00-4d17-4edb-8ae7-d1e21481c772" manual="true">
+      <element uuid="19bb73c3-268d-4ff1-8637-c16631a936e7" manual="true">
+        <element uuid="deabcddb-0fdf-414c-adad-4b1428637ece" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>in_controller_status_idbr</seg>
+        </bo>
+      </element>
+      <element uuid="defc0703-b5d6-4c50-9a86-89626ebdce8b" manual="true">
+        <element uuid="32078657-fe06-4ea5-977d-d5aa87635776" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>in_device_state_idbr</seg>
+        </bo>
+      </element>
+      <element uuid="a200714f-f7a3-400d-a7eb-f92967b6c767" manual="true">
+        <element uuid="ed866701-422d-400a-a7ee-04222aeae71f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>in_device_state_pkf</seg>
+        </bo>
+        <bendpoints>
+          <point x="503.4765625" y="189.0"/>
+          <point x="503.4765625" y="242.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="90f68bbe-ad49-4c45-aac2-bc3e31b86262" manual="true">
+        <element uuid="7cddac8a-46c9-40ad-9366-e1e87f2a2aae" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>loam_out_param_updates</seg>
+        </bo>
+      </element>
+      <element uuid="2620e36d-971b-445b-b249-37e72cf441b2" manual="true">
+        <element uuid="4defb362-85c8-41dd-8fe8-b14708f08a60" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>loam_param_updates_idbr</seg>
+        </bo>
+        <bendpoints>
+          <point x="1450.74365234375" y="317.0"/>
+          <point x="1450.74365234375" y="289.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="d97f5e45-ed88-4ee1-8b10-67eab6cdca40" manual="true">
+        <element uuid="ba1f48d3-2c03-4297-ba47-179084c4300e" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>pkf_kalman_prediction_idbr</seg>
+        </bo>
+        <bendpoints>
+          <point x="1450.74365234375" y="242.0"/>
+          <point x="1450.74365234375" y="239.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="0ab97639-7687-4d1b-b0f4-a4d5b4db54cf" manual="true">
+        <element uuid="3ee84305-4033-4ed2-bb5e-688050d673ce" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>pkf_kalman_prediction_loam</seg>
+        </bo>
+        <bendpoints>
+          <point x="942.6211547851562" y="242.0"/>
+          <point x="942.6211547851562" y="317.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="50ac038c-9a02-4001-8c8b-040b452230a6" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>controller_status</seg>
+        </bo>
+        <position y="69.0"/>
+      </element>
+      <element uuid="24041e85-5327-4eae-b52c-a48555b145dd" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>device_state</seg>
+        </bo>
+        <position y="119.0"/>
+      </element>
+      <element uuid="0045529c-adfb-4db8-bf7d-63e057274994" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>param_updates</seg>
+        </bo>
+        <position x="1245.34375" y="247.0"/>
+      </element>
+      <element uuid="8617550e-697b-4943-9c55-cbed002a0981" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="346.0" y="221.0"/>
+          <point x="358.0" y="221.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="58d941e7-ff05-422e-a4bf-3a99aff6cc22" manual="true">
+        <element uuid="fe6b3f0a-98ef-4a3b-8c43-a8fa23189b5c" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>controller_status</seg>
+          </bo>
+          <position y="10.0"/>
+        </element>
+        <element uuid="8aeca53a-cdb2-4ed9-9537-4e1643832c83" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>device_state</seg>
+          </bo>
+          <position y="60.0"/>
+        </element>
+        <element uuid="f4da4288-95ad-4d26-9dcc-08085b6f85f2" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>kalman_prediction</seg>
+          </bo>
+          <position y="110.0"/>
+        </element>
+        <element uuid="df75651e-4a7e-4218-9719-b9363619d763" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>param_updates</seg>
+          </bo>
+          <position y="160.0"/>
+        </element>
+        <element uuid="2057343e-7f40-4798-816b-0d0cd1e9619d" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>idbr</seg>
+        </bo>
+        <position x="981.1420516967773" y="59.0"/>
+        <size width="268.85794830322266" height="210.0"/>
+      </element>
+      <element uuid="d7949acf-ea45-4a43-a85a-16cd5a87352c" manual="true">
+        <element uuid="1762332c-a8d6-4165-a5f1-436b381d02a8" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>kalman_prediction</seg>
+          </bo>
+          <position y="10.0"/>
+        </element>
+        <element uuid="74da8845-15fa-4869-a36a-de192bf5da20" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>param_updates</seg>
+          </bo>
+          <position x="383.4661407470703" y="10.0"/>
+        </element>
+        <element uuid="11e0783e-09ad-4282-9650-deeb0e2cd727" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>loam</seg>
+        </bo>
+        <position x="473.01961517333984" y="237.0"/>
+        <size width="488.1223907470703" height="60.0"/>
+      </element>
+      <element uuid="bf29f805-b8d5-483e-a462-f7380600f4ca" manual="true">
+        <element uuid="c76d0f69-27e4-4f9b-a6b3-ab588c02892d" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>device_state</seg>
+          </bo>
+          <position y="10.0"/>
+        </element>
+        <element uuid="ccab5093-992e-4bcc-8180-2084bf636ef1" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>kalman_prediction</seg>
+          </bo>
+          <position x="298.93492889404297" y="10.0"/>
+        </element>
+        <element uuid="8a052b81-3fe2-424e-a605-cb1a38f0e9ad" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>pkf</seg>
+        </bo>
+        <position x="50.0" y="162.0"/>
+        <size width="419.1445770263672" height="60.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>DigitalTwin_Process.i</seg>
+      </bo>
+      <position x="10.0" y="38.0"/>
+      <size width="1350.0" height="309.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>Incubator_DigitalTwin</seg>
+    </bo>
+    <position x="470.0"/>
+    <size width="1380.0" height="359.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>Incubator_DigitalTwin</seg>
+    </context>
+  </config>
+</diagram:Diagram>

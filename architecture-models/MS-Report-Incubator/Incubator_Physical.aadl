@@ -64,4 +64,4 @@ public
 	thread implementation Physical_Controller.i
 	end Physical_Controller.i;
 	
-end Incubator_Physcial;
+end Incubator_Physical;

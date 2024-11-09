@@ -1,13 +1,14 @@
 package Incubator_DigitalTwin
 public
-	with Base_Types, Incubator_Types, Incubator_Physical;
-	
+	with Incubator_Types;
+
 	system Digital_Twin
 		features
-			controller_status: in event data port Incubator_Types::Controller_Status.i;
 			device_state: in event data port Incubator_Types::Device_State.i;
+			controller_status: in event data port Incubator_Types::Controller_Status.i;
 			param_updates: out event data port Incubator_Types::Closed_Loop_Param_Updates.i;
 	end Digital_Twin;
+
 	system implementation Digital_Twin.i
 		subcomponents
 			dtp: process DigitalTwin_Process.i;
@@ -15,15 +16,16 @@ public
 			in_controller_status: port controller_status -> dtp.controller_status;
 			in_device_state: port device_state -> dtp.device_state;
 			out_param_updates: port dtp.param_updates -> param_updates;
-			
+
 	end Digital_Twin.i;
-	
+
 	process DigitalTwin_Process
 		features
-			controller_status: in event data port Incubator_Types::Controller_Status.i;
 			device_state: in event data port Incubator_Types::Device_State.i;
+			controller_status: in event data port Incubator_Types::Controller_Status.i;
 			param_updates: out event data port Incubator_Types::Closed_Loop_Param_Updates.i;
 	end DigitalTwin_Process;
+
 	process implementation DigitalTwin_Process.i
 		subcomponents
 			idbr: thread InfluxDB_Recorder.i;
@@ -38,32 +40,33 @@ public
 			loam_param_updates_idbr: port loam.param_updates -> idbr.param_updates;
 			loam_out_param_updates: port loam.param_updates -> param_updates;
 	end DigitalTwin_Process.i;
-	
+
 	thread Plant_Kalman_Filter
 		features
 			device_state: in event data port Incubator_Types::Device_State.i;
 			kalman_prediction: out event data port Incubator_Types::Kalman_Prediction.i;
 		properties
 			Thread_Properties::Dispatch_Protocol => Sporadic;
-			Timing_Properties::Period => 1sec;
+			Timing_Properties::Period => 1 sec;
 	end Plant_Kalman_Filter;
+
 	thread implementation Plant_Kalman_Filter.i
-		
+
 	end Plant_Kalman_Filter.i;
-	
+
 	thread Lid_Open_Adaptation_Manager
 		features
 			kalman_prediction: in event data port Incubator_Types::Kalman_Prediction.i;
 			param_updates: out event data port Incubator_Types::Closed_Loop_Param_Updates.i;
 		properties
 			Thread_Properties::Dispatch_Protocol => Sporadic;
-			Timing_Properties::Period => 1sec;
+			Timing_Properties::Period => 1 sec;
 	end Lid_Open_Adaptation_Manager;
-	
+
 	thread implementation Lid_Open_Adaptation_Manager.i
-		
+
 	end Lid_Open_Adaptation_Manager.i;
-	
+
 	thread InfluxDB_Recorder
 		features
 			controller_status: in event data port Incubator_Types::Controller_Status.i;
@@ -72,10 +75,11 @@ public
 			param_updates: in event data port Incubator_Types::Closed_Loop_Param_Updates.i;
 		properties
 			Thread_Properties::Dispatch_Protocol => Sporadic;
-   			Timing_Properties::Period => 1sec;
+			Timing_Properties::Period => 1 sec;
 	end InfluxDB_Recorder;
+
 	thread implementation InfluxDB_Recorder.i
-		
+
 	end InfluxDB_Recorder.i;
 	
 end Incubator_DigitalTwin;
