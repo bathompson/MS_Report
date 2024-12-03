@@ -1,6 +1,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "incubator_cpp_pkg_interfaces/msg/controller_statusi.hpp"
 #include "incubator_cpp_pkg_interfaces/msg/device_statei.hpp"
+#include "incubator_cpp_pkg_interfaces/msg/kalman_predictioni.hpp"
+#include "incubator_cpp_pkg_interfaces/msg/closed_loop_param_updatesi.hpp"
 #include <queue>
 
 //=================================================
@@ -33,12 +35,16 @@ private:
     //=================================================
     virtual void handle_controller_status(const incubator_cpp_pkg_interfaces::msg::ControllerStatusi::SharedPtr msg) = 0;
     virtual void handle_device_state(const incubator_cpp_pkg_interfaces::msg::DeviceStatei::SharedPtr msg) = 0;
+    virtual void handle_kalman_prediction(const incubator_cpp_pkg_interfaces::msg::KalmanPredictioni::SharedPtr msg) = 0;
+    virtual void handle_param_updates(const incubator_cpp_pkg_interfaces::msg::ClosedLoopParamUpdatesi::SharedPtr msg) = 0;
 
     //=================================================
     //  C o m m u n i c a t i o n
     //=================================================
     rclcpp::Subscription<incubator_cpp_pkg_interfaces::msg::ControllerStatusi>::SharedPtr Incubator_i_Instance_dt_dtp_idbr_controller_status_subscription_;
     rclcpp::Subscription<incubator_cpp_pkg_interfaces::msg::DeviceStatei>::SharedPtr Incubator_i_Instance_dt_dtp_idbr_device_state_subscription_;
+    rclcpp::Subscription<incubator_cpp_pkg_interfaces::msg::KalmanPredictioni>::SharedPtr Incubator_i_Instance_dt_dtp_idbr_kalman_prediction_subscription_;
+    rclcpp::Subscription<incubator_cpp_pkg_interfaces::msg::ClosedLoopParamUpdatesi>::SharedPtr Incubator_i_Instance_dt_dtp_idbr_param_updates_subscription_;
 
 
 };

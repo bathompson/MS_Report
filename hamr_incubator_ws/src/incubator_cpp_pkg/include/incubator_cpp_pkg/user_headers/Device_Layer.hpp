@@ -1,4 +1,7 @@
+#pragma once
+
 #include <string>
+#include <cstring>
 #include <set>
 #include <pigpio.h>
 #include <stdexcept>
@@ -47,15 +50,16 @@ class Thermometer {
     public:
         Thermometer(const std::string path) : devicePath(path){}
         Thermometer() : devicePath(""){}
-        Thermometer operator=(const Thermometer &t) {
-          return Thermometer(t.devicePath);
+        Thermometer &operator=(const Thermometer &t) {
+          this->devicePath = t.devicePath;
+
+          return *this;
         }
         float read() {
 
           if(devicePath == "") {
             throw new std::invalid_argument("Invalid Device Path!");
           }
-
             std::ifstream device(devicePath.c_str());
             std::string line;
             const std::regex r1("([0-9a-f]{2} ){9}: crc=[0-9a-f]{2} YES");
@@ -72,5 +76,5 @@ class Thermometer {
             return temp;
         }
     private:
-        const std::string devicePath;
+        std::string devicePath;
 };

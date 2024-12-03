@@ -7,4 +7,5 @@ from incubator_cpp_pkg_interfaces.msg._device_statei import DeviceStatei  # noqa
 from incubator_cpp_pkg_interfaces.msg._empty import Empty  # noqa: F401
 from incubator_cpp_pkg_interfaces.msg._float32 import Float32  # noqa: F401
 from incubator_cpp_pkg_interfaces.msg._integer64 import Integer64  # noqa: F401
+from incubator_cpp_pkg_interfaces.msg._kalman_predictioni import KalmanPredictioni  # noqa: F401
 from incubator_cpp_pkg_interfaces.msg._secondsi import Secondsi  # noqa: F401

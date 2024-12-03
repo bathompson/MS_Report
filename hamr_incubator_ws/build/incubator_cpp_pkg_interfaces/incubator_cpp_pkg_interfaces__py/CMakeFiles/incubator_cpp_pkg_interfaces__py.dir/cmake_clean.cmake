@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_float32_s.c"
   "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_integer64.py"
   "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_integer64_s.c"
+  "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_kalman_predictioni.py"
+  "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_kalman_predictioni_s.c"
   "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_secondsi.py"
   "../rosidl_generator_py/incubator_cpp_pkg_interfaces/msg/_secondsi_s.c"
   "CMakeFiles/incubator_cpp_pkg_interfaces__py"

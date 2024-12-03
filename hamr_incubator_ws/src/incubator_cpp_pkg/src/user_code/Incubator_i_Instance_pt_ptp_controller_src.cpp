@@ -1,5 +1,5 @@
 #include "incubator_cpp_pkg/user_headers/Incubator_i_Instance_pt_ptp_controller_src.hpp"
-
+#include "incubator_cpp_pkg/user_headers/util.hpp"
 //=================================================
 //  I n i t i a l i z e    E n t r y    P o i n t
 //=================================================
@@ -19,13 +19,6 @@ void Incubator_i_Instance_pt_ptp_controller::initialize()
     sm = Controller_Model_SM(desired_temp, lower_bound, heating_time, heating_gap);
 }
 
-uint8_t convertState(IncubatorState s) {
-    if(s == IncubatorState::Heating) return incubator_cpp_pkg_interfaces::msg::ControllerState::CONTROLLER_STATE_HEATING;
-    if(s == IncubatorState::CoolingDown) return incubator_cpp_pkg_interfaces::msg::ControllerState::CONTROLLER_STATE_COOLING;
-    else return incubator_cpp_pkg_interfaces::msg::ControllerState::CONTROLLER_STATE_WAITING;
-
-}
-
 //=================================================
 //  C o m p u t e    E n t r y    P o i n t
 //=================================================
@@ -33,6 +26,7 @@ void Incubator_i_Instance_pt_ptp_controller::handle_device_state(const incubator
 {
     // Handle device_state msg
     // Record sensor data
+    PRINT_INFO("Internal box temp is %.02f. Room temp is %.02f", msg->average_internal_temp.value.data, msg->t3.value.data);
     box_air_temp = msg->average_internal_temp.value.data;
     room_temp = msg->t3.value.data;
 
@@ -58,12 +52,19 @@ void Incubator_i_Instance_pt_ptp_controller::handle_device_state(const incubator
     controllerStatusMsg.cur_time.value.data = (unsigned long)time(NULL);
     controllerStatusMsg.heater_on.data = heater_ctrl;
     controllerStatusMsg.fan_on.data = fan_ctrl;
-    controllerStatusMsg.current_state.controller_state = convertState(sm.cur_state);
+    controllerStatusMsg.current_state.controller_state = convertIncubatorStateToRosEnum(sm.cur_state);
     controllerStatusMsg.next_time.value.data = sm.nextTime ? *sm.nextTime : -1;
     controllerStatusMsg.target_temp.value.data = sm.desired_temp;
     controllerStatusMsg.lower_bound.value.data = sm.lower_bound;
     controllerStatusMsg.heating_time.value.data = sm.heating_time;
     controllerStatusMsg.heating_gap.value.data = sm.heating_gap;
+
+    PRINT_INFO("cur_time: %lu, heater_on: %s, fan_on: %s, controller_state: %s, next_time: %lu, target_temp: %.02f, lower_bound: %.02f, heating_time: %lu, heating_gap: %lu",
+                controllerStatusMsg.cur_time.value.data, controllerStatusMsg.heater_on.data == true ? "true" : "false", controllerStatusMsg.fan_on.data == true ? "true" : "false",
+                convertIncubatorStateRosEnumToString(controllerStatusMsg.current_state.controller_state).c_str(), controllerStatusMsg.next_time.value.data, 
+                controllerStatusMsg.target_temp.value.data, controllerStatusMsg.lower_bound.value.data, controllerStatusMsg.heating_time.value.data, controllerStatusMsg.heating_gap.value.data);
+
+    put_controller_status(controllerStatusMsg);
 
 }
 
@@ -72,5 +73,6 @@ void Incubator_i_Instance_pt_ptp_controller::handle_param_updates(const incubato
     // Handle param_updates msg
     RCLCPP_INFO(this->get_logger(), "Setting param updates");
     sm.desired_temp = msg->target_temperature.value.data;
+    desired_temp = sm.desired_temp;
 }
 

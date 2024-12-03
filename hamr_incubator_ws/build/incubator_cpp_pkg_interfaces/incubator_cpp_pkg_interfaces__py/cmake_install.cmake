@@ -1,8 +1,8 @@
-# Install script for directory: /home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_interfaces/incubator_cpp_pkg_interfaces__py
+# Install script for directory: /home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces/incubator_cpp_pkg_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/thompson/MS_Report/hamr_incubator_ws/install/incubator_cpp_pkg_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

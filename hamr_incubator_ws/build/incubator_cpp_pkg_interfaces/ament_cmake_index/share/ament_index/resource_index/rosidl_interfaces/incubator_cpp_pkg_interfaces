@@ -16,5 +16,7 @@ msg/Float32.idl
 msg/Float32.msg
 msg/Integer64.idl
 msg/Integer64.msg
+msg/KalmanPredictioni.idl
+msg/KalmanPredictioni.msg
 msg/Secondsi.idl
 msg/Secondsi.msg

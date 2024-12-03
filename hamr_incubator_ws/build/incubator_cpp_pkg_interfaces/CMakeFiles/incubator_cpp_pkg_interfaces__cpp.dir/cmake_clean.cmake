@@ -32,6 +32,9 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/integer64__builder.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/integer64__struct.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/integer64__traits.hpp"
+  "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/kalman_predictioni__builder.hpp"
+  "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/kalman_predictioni__struct.hpp"
+  "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/kalman_predictioni__traits.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/secondsi__builder.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/secondsi__struct.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/detail/secondsi__traits.hpp"
@@ -39,6 +42,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/empty.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/float32.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/integer64.hpp"
+  "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/kalman_predictioni.hpp"
   "rosidl_generator_cpp/incubator_cpp_pkg_interfaces/msg/secondsi.hpp"
 )
 

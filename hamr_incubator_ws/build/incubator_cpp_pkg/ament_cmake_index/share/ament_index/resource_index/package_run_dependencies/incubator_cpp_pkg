@@ -1,1 +1,1 @@
-rclcpp;incubator_cpp_pkg_interfaces;ament_lint_auto;ament_lint_common
+rclcpp;incubator_cpp_pkg_interfaces;sensor_msgs;ament_lint_auto;ament_lint_common

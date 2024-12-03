@@ -1,6 +1,0 @@
-[31mCMake Error at CMakeLists.txt:16 (target_link_libraries):
-  Cannot specify link libraries for target
-  "Incubator_i_Instance_pt_ptp_device_manager" which is not built by this
-  project.
-
-[0m

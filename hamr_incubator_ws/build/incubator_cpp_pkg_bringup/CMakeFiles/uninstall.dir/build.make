@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thompson/MS_Report/hamr_incubator_ws/src/incubator_cpp_pkg_bringup
+CMAKE_SOURCE_DIR = /home/thompson/incubator_ws/src/incubator_cpp_pkg_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_bringup
+CMAKE_BINARY_DIR = /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thompson/MS_Report/hamr_incubator_ws/src/incubator_cpp_pkg_bringup /home/thompson/MS_Report/hamr_incubator_ws/src/incubator_cpp_pkg_bringup /home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_bringup /home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_bringup /home/thompson/MS_Report/hamr_incubator_ws/build/incubator_cpp_pkg_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thompson/incubator_ws/src/incubator_cpp_pkg_bringup /home/thompson/incubator_ws/src/incubator_cpp_pkg_bringup /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

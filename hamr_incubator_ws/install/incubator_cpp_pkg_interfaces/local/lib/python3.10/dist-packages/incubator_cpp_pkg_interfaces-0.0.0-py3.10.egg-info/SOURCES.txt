@@ -14,4 +14,5 @@ incubator_cpp_pkg_interfaces/msg/_device_statei.py
 incubator_cpp_pkg_interfaces/msg/_empty.py
 incubator_cpp_pkg_interfaces/msg/_float32.py
 incubator_cpp_pkg_interfaces/msg/_integer64.py
+incubator_cpp_pkg_interfaces/msg/_kalman_predictioni.py
 incubator_cpp_pkg_interfaces/msg/_secondsi.py
