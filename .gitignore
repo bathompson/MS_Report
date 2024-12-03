@@ -1,2 +1,7 @@
 architecture-models/MS-Report-Incubator/.settings/org.sireum.aadl.hamr.prefs
-**/venv/
+**/venv/**
+hamr_incubator_ws/build/**
+hamr_incubator_ws/install/**
+hamr_incubator_ws/log/**
+hamr_incubator_ws/install/**
+hamr_incubator_ws/.DS_Store
