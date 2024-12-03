@@ -1,4 +1,0 @@
-Invoking command in '/home/thompson/incubator_ws/build/incubator_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_description -- -j7 -l7
-Invoked command in '/home/thompson/incubator_ws/build/incubator_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_description -- -j7 -l7
-Invoking command in '/home/thompson/incubator_ws/build/incubator_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_description
-Invoked command in '/home/thompson/incubator_ws/build/incubator_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_description

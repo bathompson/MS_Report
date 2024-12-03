@@ -1,6 +1,0 @@
-[31mCMake Error at CMakeLists.txt:28 (install):
-  install TARGETS given target "Incubator_i_Instance_dt_dtp_pkf_exe" which
-  does not exist.
-
-[0m
-gmake: *** [Makefile:701: cmake_check_build_system] Error 1
