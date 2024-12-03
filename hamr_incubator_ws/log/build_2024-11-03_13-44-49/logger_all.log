@@ -1,0 +1,337 @@
+[0.111s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.111s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=7, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7873fe087a90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7873fe0869e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7873fe0869e0>>)
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.264s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/thompson/incubator_ws'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg) by extension 'ros'
+[0.280s] DEBUG:colcon.colcon_core.package_identification:Package 'src/incubator_cpp_pkg' with type 'ros.ament_cmake' and name 'incubator_cpp_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extension 'ignore_ament_install'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extensions ['colcon_pkg']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_bringup) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'src/incubator_cpp_pkg_bringup' with type 'ros.ament_cmake' and name 'incubator_cpp_pkg_bringup'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_cpp_pkg_interfaces) by extension 'ros'
+[0.282s] DEBUG:colcon.colcon_core.package_identification:Package 'src/incubator_cpp_pkg_interfaces' with type 'ros.ament_cmake' and name 'incubator_cpp_pkg_interfaces'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/incubator_description) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/incubator_description' with type 'ros.ament_cmake' and name 'incubator_description'
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.302s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/thompson/incubator_ws/install
+[0.303s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.358s] DEBUG:colcon.colcon_core.verb:Building package 'incubator_cpp_pkg_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces', 'merge_install': False, 'path': '/home/thompson/incubator_ws/src/incubator_cpp_pkg_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'cmake_target' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.359s] DEBUG:colcon.colcon_core.verb:Building package 'incubator_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thompson/incubator_ws/build/incubator_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thompson/incubator_ws/install/incubator_description', 'merge_install': False, 'path': '/home/thompson/incubator_ws/src/incubator_description', 'symlink_install': False, 'test_result_base': None}
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'cmake_target' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.359s] DEBUG:colcon.colcon_core.verb:Building package 'incubator_cpp_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thompson/incubator_ws/build/incubator_cpp_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thompson/incubator_ws/install/incubator_cpp_pkg', 'merge_install': False, 'path': '/home/thompson/incubator_ws/src/incubator_cpp_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'cmake_target' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'incubator_cpp_pkg_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.360s] DEBUG:colcon.colcon_core.verb:Building package 'incubator_cpp_pkg_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup', 'merge_install': False, 'path': '/home/thompson/incubator_ws/src/incubator_cpp_pkg_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.360s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.361s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.361s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thompson/incubator_ws/src/incubator_cpp_pkg_interfaces' with build type 'ament_cmake'
+[0.361s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thompson/incubator_ws/src/incubator_cpp_pkg_interfaces'
+[0.364s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.364s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.364s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.368s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thompson/incubator_ws/src/incubator_description' with build type 'ament_cmake'
+[0.369s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thompson/incubator_ws/src/incubator_description'
+[0.369s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces -- -j7 -l7
+[0.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_description -- -j7 -l7
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_description -- -j7 -l7
+[0.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_description
+[0.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_description)
+[0.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_description
+[0.499s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description' for CMake module files
+[0.499s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description' for CMake config files
+[0.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_description', 'cmake_prefix_path')
+[0.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/hook/cmake_prefix_path.ps1'
+[0.500s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/hook/cmake_prefix_path.dsv'
+[0.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/hook/cmake_prefix_path.sh'
+[0.502s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/bin'
+[0.502s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/lib/pkgconfig/incubator_description.pc'
+[0.502s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/lib/python3.10/site-packages'
+[0.502s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/bin'
+[0.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.ps1'
+[0.504s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.dsv'
+[0.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.sh'
+[0.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.bash'
+[0.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.zsh'
+[0.507s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_description/share/colcon-core/packages/incubator_description)
+[0.536s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_description)
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description' for CMake module files
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description' for CMake config files
+[0.537s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_description', 'cmake_prefix_path')
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/hook/cmake_prefix_path.ps1'
+[0.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/hook/cmake_prefix_path.dsv'
+[0.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/hook/cmake_prefix_path.sh'
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/bin'
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/lib/pkgconfig/incubator_description.pc'
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/lib/python3.10/site-packages'
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_description/bin'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.sh'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.bash'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.zsh'
+[0.542s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_description/share/colcon-core/packages/incubator_description)
+[0.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces -- -j7 -l7
+[1.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces
+[1.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_cpp_pkg_interfaces)
+[1.204s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces' for CMake module files
+[1.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg_interfaces
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces' for CMake config files
+[1.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg_interfaces', 'cmake_prefix_path')
+[1.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/cmake_prefix_path.ps1'
+[1.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/cmake_prefix_path.dsv'
+[1.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/cmake_prefix_path.sh'
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib'
+[1.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg_interfaces', 'ld_library_path_lib')
+[1.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/ld_library_path_lib.ps1'
+[1.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/ld_library_path_lib.dsv'
+[1.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/ld_library_path_lib.sh'
+[1.210s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/bin'
+[1.210s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib/pkgconfig/incubator_cpp_pkg_interfaces.pc'
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib/python3.10/site-packages'
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/bin'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.ps1'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.dsv'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.sh'
+[1.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.bash'
+[1.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.zsh'
+[1.214s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/colcon-core/packages/incubator_cpp_pkg_interfaces)
+[1.587s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_cpp_pkg_interfaces)
+[1.587s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces' for CMake module files
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces' for CMake config files
+[1.589s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg_interfaces', 'cmake_prefix_path')
+[1.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/cmake_prefix_path.ps1'
+[1.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/cmake_prefix_path.dsv'
+[1.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/cmake_prefix_path.sh'
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib'
+[1.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg_interfaces', 'ld_library_path_lib')
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/ld_library_path_lib.ps1'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/ld_library_path_lib.dsv'
+[1.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/hook/ld_library_path_lib.sh'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/bin'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib/pkgconfig/incubator_cpp_pkg_interfaces.pc'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib/python3.10/site-packages'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/bin'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.ps1'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.dsv'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.sh'
+[1.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.bash'
+[1.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/package.zsh'
+[1.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/colcon-core/packages/incubator_cpp_pkg_interfaces)
+[1.597s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thompson/incubator_ws/src/incubator_cpp_pkg' with build type 'ament_cmake'
+[1.597s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thompson/incubator_ws/src/incubator_cpp_pkg'
+[1.597s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg -- -j7 -l7
+[6.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg -- -j7 -l7
+[6.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg
+[6.564s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_cpp_pkg)
+[6.565s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg' for CMake module files
+[6.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg
+[6.566s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg' for CMake config files
+[6.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg', 'cmake_prefix_path')
+[6.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/hook/cmake_prefix_path.ps1'
+[6.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/hook/cmake_prefix_path.dsv'
+[6.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/hook/cmake_prefix_path.sh'
+[6.568s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib'
+[6.568s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/bin'
+[6.568s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/pkgconfig/incubator_cpp_pkg.pc'
+[6.568s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/python3.10/site-packages'
+[6.569s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/bin'
+[6.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.ps1'
+[6.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.dsv'
+[6.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.sh'
+[6.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.bash'
+[6.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.zsh'
+[6.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/colcon-core/packages/incubator_cpp_pkg)
+[6.666s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_cpp_pkg)
+[6.666s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg' for CMake module files
+[6.667s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg' for CMake config files
+[6.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg', 'cmake_prefix_path')
+[6.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/hook/cmake_prefix_path.ps1'
+[6.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/hook/cmake_prefix_path.dsv'
+[6.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/hook/cmake_prefix_path.sh'
+[6.669s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib'
+[6.669s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/bin'
+[6.669s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/pkgconfig/incubator_cpp_pkg.pc'
+[6.670s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/python3.10/site-packages'
+[6.670s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg/bin'
+[6.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.ps1'
+[6.671s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.dsv'
+[6.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.sh'
+[6.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.bash'
+[6.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.zsh'
+[6.673s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_cpp_pkg/share/colcon-core/packages/incubator_cpp_pkg)
+[6.674s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thompson/incubator_ws/src/incubator_cpp_pkg_bringup' with build type 'ament_cmake'
+[6.674s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thompson/incubator_ws/src/incubator_cpp_pkg_bringup'
+[6.674s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.674s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup -- -j7 -l7
+[6.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup' returned '0': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup -- -j7 -l7
+[6.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup
+[6.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_cpp_pkg_bringup)
+[6.776s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup' for CMake module files
+[6.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup' returned '0': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg_bringup
+[6.777s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup' for CMake config files
+[6.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg_bringup', 'cmake_prefix_path')
+[6.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/hook/cmake_prefix_path.ps1'
+[6.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/hook/cmake_prefix_path.dsv'
+[6.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/hook/cmake_prefix_path.sh'
+[6.779s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/bin'
+[6.780s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/lib/pkgconfig/incubator_cpp_pkg_bringup.pc'
+[6.780s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/lib/python3.10/site-packages'
+[6.780s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/bin'
+[6.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.ps1'
+[6.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.dsv'
+[6.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.sh'
+[6.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.bash'
+[6.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.zsh'
+[6.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/colcon-core/packages/incubator_cpp_pkg_bringup)
+[6.813s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(incubator_cpp_pkg_bringup)
+[6.813s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup' for CMake module files
+[6.814s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup' for CMake config files
+[6.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('incubator_cpp_pkg_bringup', 'cmake_prefix_path')
+[6.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/hook/cmake_prefix_path.ps1'
+[6.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/hook/cmake_prefix_path.dsv'
+[6.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/hook/cmake_prefix_path.sh'
+[6.816s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/bin'
+[6.816s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/lib/pkgconfig/incubator_cpp_pkg_bringup.pc'
+[6.816s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/lib/python3.10/site-packages'
+[6.816s] Level 1:colcon.colcon_core.environment:checking '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/bin'
+[6.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.ps1'
+[6.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.dsv'
+[6.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.sh'
+[6.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.bash'
+[6.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/incubator_cpp_pkg_bringup/package.zsh'
+[6.820s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup/share/colcon-core/packages/incubator_cpp_pkg_bringup)
+[6.821s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.822s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.822s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.822s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.827s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.827s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.828s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.841s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.842s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thompson/incubator_ws/install/local_setup.ps1'
+[6.843s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thompson/incubator_ws/install/_local_setup_util_ps1.py'
+[6.845s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thompson/incubator_ws/install/setup.ps1'
+[6.846s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thompson/incubator_ws/install/local_setup.sh'
+[6.847s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thompson/incubator_ws/install/_local_setup_util_sh.py'
+[6.847s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thompson/incubator_ws/install/setup.sh'
+[6.849s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thompson/incubator_ws/install/local_setup.bash'
+[6.849s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thompson/incubator_ws/install/setup.bash'
+[6.851s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thompson/incubator_ws/install/local_setup.zsh'
+[6.851s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thompson/incubator_ws/install/setup.zsh'

@@ -1,0 +1,4 @@
+[01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/base_code/Incubator_i_Instance_pt_ptp_device_manager_runner.cpp:[m[K In function ‘[01m[Kvoid sigintHandler(int)[m[K’:
+[01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/base_code/Incubator_i_Instance_pt_ptp_device_manager_runner.cpp:18:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   18 | void sigintHandler([01;35m[Kint c[m[K)
+      |                    [01;35m[K~~~~^[m[K

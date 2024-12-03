@@ -1,0 +1,3 @@
+[console_scripts]
+Incubator_i_Instance_dt_dtp_pkf_exe = incubator_py_pkg.Incubator_i_Instance_dt_dtp_pkf:main
+

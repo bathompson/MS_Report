@@ -1,0 +1,101 @@
+[0.009s] Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg': AMENT_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg -- -j7 -l7
+[0.036s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.166s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.168s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.173s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.181s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.193s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.221s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.222s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.296s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.341s] -- Found incubator_cpp_pkg_interfaces: 0.0.0 (/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/share/incubator_cpp_pkg_interfaces/cmake)
+[0.354s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.441s] -- Configuring done
+[0.471s] -- Generating done
+[0.473s] -- Build files have been written to: /home/thompson/incubator_ws/build/incubator_cpp_pkg
+[0.503s] [35m[1mConsolidate compiler generated dependencies of target Incubator_i_Instance_pt_ptp_device_manager_exe[0m
+[0.506s] [35m[1mConsolidate compiler generated dependencies of target Incubator_i_Instance_dt_dtp_idbr_exe[0m
+[0.508s] [35m[1mConsolidate compiler generated dependencies of target Incubator_i_Instance_pt_ptp_controller_exe[0m
+[0.512s] [ 20%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_pkf_exe.dir/src/base_code/Incubator_i_Instance_dt_dtp_pkf_base_src.cpp.o[0m
+[0.512s] [ 20%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_pkf_exe.dir/src/user_code/Incubator_i_Instance_dt_dtp_pkf_src.cpp.o[0m
+[0.512s] [ 20%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_pkf_exe.dir/src/base_code/Incubator_i_Instance_dt_dtp_pkf_runner.cpp.o[0m
+[0.512s] [ 20%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_loam_exe.dir/src/base_code/Incubator_i_Instance_dt_dtp_loam_runner.cpp.o[0m
+[0.527s] [ 25%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_pt_ptp_device_manager_exe.dir/src/base_code/Incubator_i_Instance_pt_ptp_device_manager_runner.cpp.o[0m
+[0.528s] [ 30%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_pt_ptp_controller_exe.dir/src/base_code/Incubator_i_Instance_pt_ptp_controller_runner.cpp.o[0m
+[0.528s] [ 35%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_idbr_exe.dir/src/base_code/Incubator_i_Instance_dt_dtp_idbr_runner.cpp.o[0m
+[3.652s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_pkf_src.cpp:[m[K In member function ‘[01m[Kvirtual void Incubator_i_Instance_dt_dtp_pkf::handle_device_state(incubator_cpp_pkg_interfaces::msg::DeviceStatei_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.655s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_pkf_src.cpp:16:124:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.655s]    16 | void Incubator_i_Instance_dt_dtp_pkf::handle_device_state([01;35m[Kconst incubator_cpp_pkg_interfaces::msg::DeviceStatei::SharedPtr msg[m[K)
+[3.655s]       |                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.829s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/base_code/Incubator_i_Instance_pt_ptp_device_manager_runner.cpp:[m[K In function ‘[01m[Kvoid sigintHandler(int)[m[K’:
+[3.829s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/base_code/Incubator_i_Instance_pt_ptp_device_manager_runner.cpp:19:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.829s]    19 | void sigintHandler([01;35m[Kint c[m[K)
+[3.829s]       |                    [01;35m[K~~~~^[m[K
+[4.272s] [ 40%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_pt_ptp_controller_exe.dir/src/user_code/Incubator_i_Instance_pt_ptp_controller_src.cpp.o[0m
+[4.329s] [ 45%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_pt_ptp_controller_exe.dir/src/base_code/Incubator_i_Instance_pt_ptp_controller_base_src.cpp.o[0m
+[4.420s] [ 50%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_loam_exe.dir/src/user_code/Incubator_i_Instance_dt_dtp_loam_src.cpp.o[0m
+[4.432s] [ 55%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_idbr_exe.dir/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp.o[0m
+[4.519s] [ 60%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_pt_ptp_device_manager_exe.dir/src/user_code/Incubator_i_Instance_pt_ptp_device_manager_src.cpp.o[0m
+[4.959s] [ 65%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_idbr_exe.dir/src/base_code/Incubator_i_Instance_dt_dtp_idbr_base_src.cpp.o[0m
+[7.626s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_loam_src.cpp:[m[K In member function ‘[01m[Kvirtual void Incubator_i_Instance_dt_dtp_loam::handle_kalman_prediction(incubator_cpp_pkg_interfaces::msg::KalmanPredictioni_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.626s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_loam_src.cpp:16:135:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.627s]    16 | void Incubator_i_Instance_dt_dtp_loam::handle_kalman_prediction([01;35m[Kconst incubator_cpp_pkg_interfaces::msg::KalmanPredictioni::SharedPtr msg[m[K)
+[7.628s]       |                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.945s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:[m[K In member function ‘[01m[Kvirtual void Incubator_i_Instance_dt_dtp_idbr::handle_controller_status(incubator_cpp_pkg_interfaces::msg::ControllerStatusi_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.945s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:16:135:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.945s]    16 | void Incubator_i_Instance_dt_dtp_idbr::handle_controller_status([01;35m[Kconst incubator_cpp_pkg_interfaces::msg::ControllerStatusi::SharedPtr msg[m[K)
+[7.945s]       |                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.949s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:[m[K In member function ‘[01m[Kvirtual void Incubator_i_Instance_dt_dtp_idbr::handle_device_state(incubator_cpp_pkg_interfaces::msg::DeviceStatei_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.955s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:21:125:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.955s]    21 | void Incubator_i_Instance_dt_dtp_idbr::handle_device_state([01;35m[Kconst incubator_cpp_pkg_interfaces::msg::DeviceStatei::SharedPtr msg[m[K)
+[7.955s]       |                                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.955s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:[m[K In member function ‘[01m[Kvirtual void Incubator_i_Instance_dt_dtp_idbr::handle_kalman_prediction(incubator_cpp_pkg_interfaces::msg::KalmanPredictioni_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.955s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:26:135:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.955s]    26 | void Incubator_i_Instance_dt_dtp_idbr::handle_kalman_prediction([01;35m[Kconst incubator_cpp_pkg_interfaces::msg::KalmanPredictioni::SharedPtr msg[m[K)
+[7.955s]       |                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.957s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:[m[K In member function ‘[01m[Kvirtual void Incubator_i_Instance_dt_dtp_idbr::handle_param_updates(incubator_cpp_pkg_interfaces::msg::ClosedLoopParamUpdatesi_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.957s] [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:31:137:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.957s]    31 | void Incubator_i_Instance_dt_dtp_idbr::handle_param_updates([01;35m[Kconst incubator_cpp_pkg_interfaces::msg::ClosedLoopParamUpdatesi::SharedPtr msg[m[K)
+[7.957s]       |                                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[8.249s] [ 70%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_dt_dtp_loam_exe.dir/src/base_code/Incubator_i_Instance_dt_dtp_loam_base_src.cpp.o[0m
+[8.360s] [ 75%] [32mBuilding CXX object CMakeFiles/Incubator_i_Instance_pt_ptp_device_manager_exe.dir/src/base_code/Incubator_i_Instance_pt_ptp_device_manager_base_src.cpp.o[0m
+[11.668s] [ 80%] [32m[1mLinking CXX executable Incubator_i_Instance_dt_dtp_pkf_exe[0m
+[12.122s] [ 80%] Built target Incubator_i_Instance_dt_dtp_pkf_exe
+[18.596s] [ 85%] [32m[1mLinking CXX executable Incubator_i_Instance_dt_dtp_loam_exe[0m
+[18.962s] [ 90%] [32m[1mLinking CXX executable Incubator_i_Instance_pt_ptp_device_manager_exe[0m
+[19.051s] [ 90%] Built target Incubator_i_Instance_dt_dtp_loam_exe
+[19.083s] [ 95%] [32m[1mLinking CXX executable Incubator_i_Instance_pt_ptp_controller_exe[0m
+[19.558s] [ 95%] Built target Incubator_i_Instance_pt_ptp_device_manager_exe
+[19.650s] [ 95%] Built target Incubator_i_Instance_pt_ptp_controller_exe
+[23.779s] [100%] [32m[1mLinking CXX executable Incubator_i_Instance_dt_dtp_idbr_exe[0m
+[24.496s] [100%] Built target Incubator_i_Instance_dt_dtp_idbr_exe
+[24.508s] Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg' returned '0': AMENT_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_cpp_pkg -- -j7 -l7
+[24.589s] Invoking command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg': AMENT_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg
+[24.595s] -- Install configuration: ""
+[24.595s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_pt_ptp_device_manager_exe
+[24.606s] -- Set runtime path of "/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_pt_ptp_device_manager_exe" to ""
+[24.606s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_pt_ptp_controller_exe
+[24.610s] -- Set runtime path of "/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_pt_ptp_controller_exe" to ""
+[24.611s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_dt_dtp_idbr_exe
+[24.617s] -- Set runtime path of "/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_dt_dtp_idbr_exe" to ""
+[24.617s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_dt_dtp_pkf_exe
+[24.619s] -- Set runtime path of "/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_dt_dtp_pkf_exe" to ""
+[24.619s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_dt_dtp_loam_exe
+[24.622s] -- Set runtime path of "/home/thompson/incubator_ws/install/incubator_cpp_pkg/lib/incubator_cpp_pkg/Incubator_i_Instance_dt_dtp_loam_exe" to ""
+[24.622s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/incubator_cpp_pkg
+[24.622s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/incubator_cpp_pkg
+[24.622s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/environment/ament_prefix_path.sh
+[24.622s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/environment/ament_prefix_path.dsv
+[24.622s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/environment/path.sh
+[24.622s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/environment/path.dsv
+[24.623s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/local_setup.bash
+[24.623s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/local_setup.sh
+[24.623s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/local_setup.zsh
+[24.623s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/local_setup.dsv
+[24.623s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.dsv
+[24.623s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/ament_index/resource_index/packages/incubator_cpp_pkg
+[24.623s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/cmake/incubator_cpp_pkgConfig.cmake
+[24.623s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/cmake/incubator_cpp_pkgConfig-version.cmake
+[24.623s] -- Installing: /home/thompson/incubator_ws/install/incubator_cpp_pkg/share/incubator_cpp_pkg/package.xml
+[24.625s] Invoked command in '/home/thompson/incubator_ws/build/incubator_cpp_pkg' returned '0': AMENT_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_cpp_pkg

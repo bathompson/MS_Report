@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/thompson/incubator_ws/build/incubator_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_description -- -j7 -l7
+[0.063s] Invoked command in '/home/thompson/incubator_ws/build/incubator_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thompson/incubator_ws/build/incubator_description -- -j7 -l7
+[0.116s] Invoking command in '/home/thompson/incubator_ws/build/incubator_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_description
+[0.128s] -- Install configuration: ""
+[0.129s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description//urdf
+[0.129s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description//urdf/incubator_form.xacro
+[0.129s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description//urdf/common_properties.xacro
+[0.129s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description//urdf/incubator.urdf.xacro
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description//rviz
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description//rviz/urdf_config.rviz
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/ament_index/resource_index/package_run_dependencies/incubator_description
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/ament_index/resource_index/parent_prefix_path/incubator_description
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/environment/ament_prefix_path.dsv
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/environment/path.sh
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/environment/path.dsv
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/local_setup.bash
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/local_setup.sh
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/local_setup.zsh
+[0.130s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/local_setup.dsv
+[0.132s] -- Installing: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.dsv
+[0.132s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/ament_index/resource_index/packages/incubator_description
+[0.132s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/cmake/incubator_descriptionConfig.cmake
+[0.132s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/cmake/incubator_descriptionConfig-version.cmake
+[0.132s] -- Up-to-date: /home/thompson/incubator_ws/install/incubator_description/share/incubator_description/package.xml
+[0.135s] Invoked command in '/home/thompson/incubator_ws/build/incubator_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thompson/incubator_ws/build/incubator_description

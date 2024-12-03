@@ -1,0 +1,21 @@
+[0.602s] Invoking command in '/home/thompson/incubator_ws/src/incubator_py_pkg': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg PYTHONPATH=/home/thompson/incubator_ws/build/incubator_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/incubator_py_pkg build --build-base /home/thompson/incubator_ws/build/incubator_py_pkg/build install --record /home/thompson/incubator_ws/build/incubator_py_pkg/install.log --single-version-externally-managed install_data
+[0.819s] running egg_info
+[0.820s] writing ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/PKG-INFO
+[0.821s] writing dependency_links to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/dependency_links.txt
+[0.821s] writing entry points to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/entry_points.txt
+[0.821s] writing requirements to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/requires.txt
+[0.822s] writing top-level names to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/top_level.txt
+[0.823s] reading manifest file '../../build/incubator_py_pkg/incubator_py_pkg.egg-info/SOURCES.txt'
+[0.824s] writing manifest file '../../build/incubator_py_pkg/incubator_py_pkg.egg-info/SOURCES.txt'
+[0.824s] running build
+[0.825s] running build_py
+[0.825s] running install
+[0.825s] running install_lib
+[0.826s] running install_data
+[0.827s] running install_egg_info
+[0.828s] removing '/home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.828s] Copying ../../build/incubator_py_pkg/incubator_py_pkg.egg-info to /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg-0.0.0-py3.10.egg-info
+[0.829s] running install_scripts
+[0.850s] Installing Incubator_i_Instance_dt_dtp_pkf_exe script to /home/thompson/incubator_ws/install/incubator_py_pkg/lib/incubator_py_pkg
+[0.851s] writing list of installed files to '/home/thompson/incubator_ws/build/incubator_py_pkg/install.log'
+[0.870s] Invoked command in '/home/thompson/incubator_ws/src/incubator_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/thompson/incubator_ws/install/incubator_cpp_pkg_interfaces:/home/thompson/incubator_ws/install/incubator_cpp_pkg_bringup:/home/thompson/incubator_ws/install/incubator_description:/home/thompson/incubator_ws/install/incubator_cpp_pkg PYTHONPATH=/home/thompson/incubator_ws/build/incubator_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/incubator_py_pkg build --build-base /home/thompson/incubator_ws/build/incubator_py_pkg/build install --record /home/thompson/incubator_ws/build/incubator_py_pkg/install.log --single-version-externally-managed install_data

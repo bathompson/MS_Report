@@ -1,0 +1,12 @@
+In file included from [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/include/incubator_cpp_pkg/user_headers/Incubator_i_Instance_dt_dtp_idbr_src.hpp:2[m[K,
+                 from [01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/src/user_code/Incubator_i_Instance_dt_dtp_idbr_src.cpp:1[m[K:
+[01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/include/incubator_cpp_pkg/user_headers/influxdb.hpp:[m[K In static member function ‘[01m[Kstatic int influxdb_cpp::detail::inner::http_request(const char*, const char*, const string&, const string&, const influxdb_cpp::server_info&, std::string*)[m[K’:
+[01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/include/incubator_cpp_pkg/user_headers/influxdb.hpp:302:15:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+  302 | #define __(c) [01;35m[Kif[m[K((_GET_NEXT_CHAR()) != c) { ret_code = -9; goto END; }
+      |               [01;35m[K^~[m[K
+[01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/include/incubator_cpp_pkg/user_headers/influxdb.hpp:321:41:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[K__[m[K’
+  321 |                             do {__('\r')[01;36m[K__[m[K('\n')
+      |                                         [01;36m[K^~[m[K
+[01m[K/home/thompson/incubator_ws/src/incubator_cpp_pkg/include/incubator_cpp_pkg/user_headers/influxdb.hpp:322:29:[m[K [01;36m[Knote: [m[Khere
+  322 |                             [01;36m[Kcase[m[K 1:
+      |                             [01;36m[K^~~~[m[K

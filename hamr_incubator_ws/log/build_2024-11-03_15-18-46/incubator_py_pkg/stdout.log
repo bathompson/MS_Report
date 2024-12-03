@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/incubator_py_pkg/incubator_py_pkg.egg-info
+writing ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/requires.txt
+writing top-level names to ../../build/incubator_py_pkg/incubator_py_pkg.egg-info/top_level.txt
+writing manifest file '../../build/incubator_py_pkg/incubator_py_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/incubator_py_pkg/incubator_py_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/incubator_py_pkg/incubator_py_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/thompson/incubator_ws/build/incubator_py_pkg/build
+creating /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib
+creating /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg
+copying incubator_py_pkg/__init__.py -> /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg
+copying incubator_py_pkg/Kalman_Filter_4P.py -> /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg
+copying incubator_py_pkg/Incubator_i_Instance_dt_dtp_pkf.py -> /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg
+running install
+running install_lib
+creating /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg
+copying /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg/__init__.py -> /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg
+copying /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg/Kalman_Filter_4P.py -> /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg
+copying /home/thompson/incubator_ws/build/incubator_py_pkg/build/lib/incubator_py_pkg/Incubator_i_Instance_dt_dtp_pkf.py -> /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg
+byte-compiling /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg/Kalman_Filter_4P.py to Kalman_Filter_4P.cpython-310.pyc
+byte-compiling /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg/Incubator_i_Instance_dt_dtp_pkf.py to Incubator_i_Instance_dt_dtp_pkf.cpython-310.pyc
+running install_data
+creating /home/thompson/incubator_ws/install/incubator_py_pkg/share/ament_index
+creating /home/thompson/incubator_ws/install/incubator_py_pkg/share/ament_index/resource_index
+creating /home/thompson/incubator_ws/install/incubator_py_pkg/share/ament_index/resource_index/packages
+copying resource/incubator_py_pkg -> /home/thompson/incubator_ws/install/incubator_py_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/thompson/incubator_ws/install/incubator_py_pkg/share/incubator_py_pkg
+running install_egg_info
+Copying ../../build/incubator_py_pkg/incubator_py_pkg.egg-info to /home/thompson/incubator_ws/install/incubator_py_pkg/lib/python3.10/site-packages/incubator_py_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/thompson/incubator_ws/build/incubator_py_pkg/install.log'
